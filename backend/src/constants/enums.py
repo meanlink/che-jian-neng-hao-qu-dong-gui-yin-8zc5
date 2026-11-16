@@ -8,3 +8,19 @@ class JobStatus(str, Enum):
     running = 'running'
     completed = 'completed'
     failed = 'failed'
+class RunStatus(str, Enum):
+    queued = 'queued'
+    running = 'running'
+    completed = 'completed'
+    failed = 'failed'
+class StepStatus(str, Enum):
+    pending = 'pending'
+    running = 'running'
+    completed = 'completed'
+    reused = 'reused'
+    failed = 'failed'
+class StepKind(str, Enum):
+    source = 'source'
+    filter_halt = 'filter_halt'
+    merge = 'merge'
+    join_temp = 'join_temp'
